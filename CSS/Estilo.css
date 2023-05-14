@@ -10,7 +10,7 @@
     header {
       background-color: #333;
       color: #fff;
-      padding: 10px;
+      padding: 23px;
     }
     
     h1 {
@@ -55,7 +55,7 @@
       margin-right: 20px;
       width: 200px;
     }
-t
+
     ul {
       list-style: none;
       margin: 0;
@@ -68,7 +68,7 @@ t
       border-radius: 5px;
       display: inline-block;
       margin-right: 20px;
-      width: 300px;
+      width: 302px;
     }
     
     li:last-child {
@@ -186,4 +186,90 @@ t
 	40% {
 		transform: rotate(-15deg);
 	}
+}
+		/* Estilos para los botones */
+		.button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-left: 10px;
+		}
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  position: relative;
+  top: 0;
+  width: 5000px;
+  z-index: 1;
+  transition: top 0.2s;
+}
+
+/* Estilos para los enlaces de la barra de navegación */
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Estilos para los enlaces activos de la barra de navegación */
+.active {
+  background-color: #4CAF50;
+}
+/* Estilos para los botones cuando el mouse pasa por encima */
+.navbar a:hover {
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+}
+/* Estilos para la sección de contenido */
+.content {
+  white-space: nowrap;
+  max-width: auto;
+  height: 370px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 2px;
+	outline: 2px solid #000000;
+  scroll-behavior: auto; /* Hace el scroll suave y automático */
+}
+.imagen-con-texto {
+	background: url('enseñar1.png') no-repeat center center fixed;
+	background-size: cover;
+  position: relative;
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.containera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.image {
+  flex: 10;
+}
+.image img {
+  width: 500px;
+  height: auto;
+}
+.contenta {
+  flex: 1;
+  margin-left: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ffffff;
 }
