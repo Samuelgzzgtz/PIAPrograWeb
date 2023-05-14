@@ -1,0 +1,93 @@
+/* Estilo para pagina para presentar*/
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+h1 {
+	margin: 0;
+	font-size: 36px;
+}
+main {
+	max-width: 800px;
+	margin: 20px auto;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.property-img {
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+}
+.property-info {
+		margin-bottom: 20px;
+}
+.property-info h2 {
+		margin: 0;
+		font-size: 24px;
+}
+.property-info p {
+		margin: 10px 0;
+		font-size: 18px;
+}
+.property-description {
+		margin-bottom: 20px;
+}
+.property-description h3 {
+		margin: 0;
+		font-size: 20px;
+	}
+.property-description p {
+		margin: 10px 0;
+		font-size: 16px;
+		line-height: 1.5;
+		text-align: justify;
+}
+.property-price {
+		margin-bottom: 20px;
+}
+.property-price h4 {
+		margin: 0;
+		font-size: 28px;
+}
+.property-price span {
+		font-size: 18px;
+		font-weight: bold;
+		color: #666;
+		margin-left: 10px;
+}
+.contact-form {
+		background-color: #eee;
+		padding: 20px;
+		border-radius: 5px;
+}
+.contact-form h3 {
+		margin: 0;
+		font-size: 20px;
+		margin-bottom: 10px;
+}
+.contact-form input,
+.contact-form textarea {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+		border: none;
+		border-radius: 3px;
+}
+.contact-form input[type="submit"] {
+		background-color: #333;
+		color: #fff;
+		cursor: pointer;
+}
+.contact-form input[type="submit"]:hover {
+	background-color: #444;
+}
