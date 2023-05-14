@@ -7,23 +7,34 @@
 	<link rel="stylesheet" href="css/Estilo.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <title>Casas de Bienes Raíces</title>
+  <script>
+		// Ocultar la barra de navegación al desplazar hacia abajo en la página
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+		  var currentScrollPos = window.pageYOffset;
+		  if (prevScrollpos > currentScrollPos) {
+		    document.getElementById("navbar").style.top = "0";
+		  } else {
+		    document.getElementById("navbar").style.top = "-50px";
+		  }
+		  prevScrollpos = currentScrollPos;
+		}
+	</script>
 </head>
 <body>
   <header>
-    <h1>Casas de Bienes Raíces</h1>
-    <nav>
-      <ul>
-        <li><a href="#" id="a">Inicio</a></li>
-        <li><a href="#" id="a">Casas en Venta</a></li>
-        <li><a href="#" id="a">Casas en Renta</a></li>
-        <li><a href="#" id="a">Contáctanos</a></li>
-      </ul>
-    </nav>
+    <div class="navbar" id="navbar">
+      <a class="active" href="#">Inicio</a>
+      <a href="#">Casas en Venta</a>
+      <a href="#">Casas en Renta</a>
+      <a href="#">Registrar</a>
+      <a href="#">Login</a>
+    </div>
   </header>
   
   <main>
     <h2>Casas en Venta</h2>
-    <ul>
+    <ul class="content">
       <li id="li">
         <h3>Casa en Venta #1</h3>
         <img src="imagenes/casa1.jpg" alt="Casa en Venta #1">
@@ -45,7 +56,7 @@
     </ul>
     
     <h2>Casas en Renta</h2>
-    <ul>
+    <ul class="content">
       <li id="li">
         <h3>Casa en Renta #1</h3>
         <img src="imagenes/casa4.jpg" alt="Casa en Renta #1">
@@ -65,6 +76,17 @@
         <button>Ver Detalles</button>
       </li>
     </ul>
+    <br>
+    <div class="containera">
+      <div class="image">
+        <img src="imagenes/enseñar1.png" alt="Imagen de ejemplo">
+      </div>
+      <div class="contenta">
+        <h2>¿Deseas vender o comprar casa en esta pagina?</h2><br>
+        <p>Al escogernos, usted asegura la venta de su propiedad.</p>
+        <button onclick="window.location.href='ruta-de-tu-otra-pagina.html'">Ir a la página</button>
+      </div>
+    </div>
   </main>
   
   <footer>

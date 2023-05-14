@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/Estilopag.css">
+	<link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
   <title>Demostracion de casa</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
 	<main>
 		<img src="imagenes/casa2.jpg" alt="Casa en venta">
 		<div>
-			<h2>Casa en venta en La Molina</h2>
+			<h2>Casa en venta en La Molina</h2><br>
 			<p>Ubicación: Calle Los Jazmines 123, San Isidro</p>
 			<p>Número de habitaciones: 4</p>
 			<p>Número de baños: 3</p>
@@ -22,7 +23,9 @@
 			<p>Área de terreno: 200 m²</p>
 		</div>
 		<div>
+			<br>
 			<h3>Descripción</h3>
+			<br>
 			<p>Te presentamos esta hermosa casa ubicada en el exclusivo barrio residencial de La Molina. La propiedad cuenta con un total de 4 habitaciones, lo que la convierte en el hogar ideal para familias grandes o aquellas que deseen un espacio extra para invitados o una oficina en casa.
 
 			La casa cuenta con 3 baños completos y uno adicional de visita, todos ellos con modernos acabados y accesorios que proporcionan un toque de elegancia y comodidad. El área construida es de 250 metros cuadrados y se encuentra en un amplio terreno de 500 metros cuadrados, lo que le brinda un amplio espacio para disfrutar y relajarse.</p>
@@ -36,23 +39,25 @@
 			El precio de venta es de $550,000 y estamos seguros de que te encantará esta hermosa casa. ¡Agenda una visita hoy mismo y descubre todo lo que esta propiedad tiene para ofrecer!</p>
 		</div>
 		<div>
+			<br>
 			<h4>Precio: $550,000</h4>
+			<br>
 		</div>
 		<div>
-			<h3>Contacto</h3>
-			<form>
-				<label for="nombre">Nombre:</label>
-				<input type="text" id="nombre" name="nombre">
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email">
-				<label for="telefono">Teléfono:</label>
-				<input type="tel" id="telefono" name="telefono">
-				<label for="mensaje">Mensaje:</label>
-				<textarea id="mensaje" name="mensaje"></textarea>
-				<input type="submit" value="Enviar">
+			<h2>Contactanos</h2>
+			<br>
+			<p>Por favor, envíanos tus comentarios o preguntas a través del siguiente formulario:</p>
+			<form action="enviar.php" method="post">
+			  <label for="nombre">Nombre:</label>
+			  <input type="text" id="nombre" name="nombre"><br><br>
+			  <label for="email">Email:</label>
+			  <input type="email" id="email" name="email"><br><br>
+			  <label for="mensaje">Mensaje:</label><br>
+			  <textarea id="mensaje" name="mensaje" rows="5" cols="40"></textarea><br><br>
+			  <input type="submit" value="Enviar">
 			</form>
-		</div>
-		<center><p id="texto"><a href="Proga.html">Regresar</a></p></center>
+		  </div>
+		  <center><p class="button" id="Colorr"><a href="Proga.html">Regresar</a></p></center>
 	</main>
 </body>
 </html>

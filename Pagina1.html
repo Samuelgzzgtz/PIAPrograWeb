@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/Estilopag.css">
+	<link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
   <title>Demostracion de casa</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
 	<main>
 		<img src="imagenes/casa1.jpg" alt="Casa en venta">
 		<div>
-			<h2>Casa en venta en Los Olivos</h2>
+			<h2>Casa en venta en Los Olivos</h2><br>
 			<p>Ubicación: Jr. Las Flores 123, Los Olivos</p>
 			<p>Número de habitaciones: 3</p>
 			<p>Número de baños: 2</p>
@@ -22,7 +23,9 @@
 			<p>Área de terreno: 200 m²</p>
 		</div>
 		<div>
+			<br>
 			<h3>Descripción</h3>
+			<br>
 			<p>"Esta encantadora casa se encuentra ubicada en el tranquilo barrio residencial de Los Olivos. Cuenta con 3 habitaciones amplias y cómodas, perfectas para alojar a toda la familia. Los baños han sido recientemente renovados y están equipados con modernos accesorios. La casa tiene un área construida de 120 m² y se encuentra en un amplio terreno de 200 m².
 
 			La cocina es espaciosa y luminosa, con mucho espacio para cocinar y almacenar tus utensilios y alimentos. Además, la sala y el comedor son ideales para relajarse y disfrutar de momentos en familia y con amigos. También cuenta con una amplia terraza y jardín para disfrutar de los días soleados y las noches cálidas.
@@ -30,23 +33,25 @@
 			La casa está construida con materiales de alta calidad y ha sido muy bien cuidada. Es perfecta para aquellos que buscan una propiedad lista para mudarse y vivir cómodamente. El precio de venta es de $250,000 y está listo para ser vendido. ¡No pierdas esta oportunidad de adquirir una hermosa casa en Los Olivos!"</p>
 		</div>
 		<div>
+			<br>
 			<h4>Precio: $250,000</h4>
+			<br>
 		</div>
 		<div>
-			<h3>Contacto</h3>
-			<form>
-				<label for="nombre">Nombre:</label>
-				<input type="text" id="nombre" name="nombre">
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email">
-				<label for="telefono">Teléfono:</label>
-				<input type="tel" id="telefono" name="telefono">
-				<label for="mensaje">Mensaje:</label>
-				<textarea id="mensaje" name="mensaje"></textarea>
-				<input type="submit" value="Enviar">
+			<h2>Contactanos</h2>
+			<br>
+			<p>Por favor, envíanos tus comentarios o preguntas a través del siguiente formulario:</p>
+			<form action="enviar.php" method="post">
+			  <label for="nombre">Nombre:</label>
+			  <input type="text" id="nombre" name="nombre"><br><br>
+			  <label for="email">Email:</label>
+			  <input type="email" id="email" name="email"><br><br>
+			  <label for="mensaje">Mensaje:</label><br>
+			  <textarea id="mensaje" name="mensaje" rows="5" cols="40"></textarea><br><br>
+			  <input type="submit" value="Enviar">
 			</form>
-		</div>
-		<center><p id="texto"><a href="Proga.html">Regresar</a></p></center>
+		  </div>
+		  <center><p class="button" id="Colorr"><a href="Proga.html">Regresar</a></p></center>
 	</main>
 </body>
 </html>
